@@ -26,7 +26,7 @@ time.sleep(0.5)
 print (moradito + "    \/\/\/\/\/" + verde + "·······" + moradito + "\/\/\/\/\/\/\/")
 
 #Instalación requirimientos y librerias:
-call("apt-get install python3 && apt install -y python3-pip && pip3 install requests && pip3 install beautifulsoup4 && pip3 install feedparser", shell=True)
+call("apt-get install -y python3 && apt install -y python3-venv python3-pip && pip3 install requests && pip3 install beautifulsoup4 && pip3 install feedparser", shell=True)
 call("clear")
 
 #Cabecera Iniciando:
