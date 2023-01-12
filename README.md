@@ -1,6 +1,6 @@
 # VulnHub-Tool-Explorer
-Terminal client to browse and download machines from the VulnHub platform. Programmed in Python 3.
-Cliente de terminal para explorar y descargar máquinas de la plataforma VulnHub. Programado en Python 3.
+Terminal client to browse and list machines from the VulnHub platform. Programmed in Python 3.
+Cliente de terminal para explorar y listar descripciones de máquinas de la plataforma VulnHub. Programado en Python 3.
 
 # Instalation | Instalación
 ✰ Descargar o clonar el repositorio. | Download or clone the repository.
