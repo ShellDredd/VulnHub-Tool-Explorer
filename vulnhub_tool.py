@@ -67,7 +67,7 @@ print ('')
 while True:
     print ("MENU")
     print(verde + "❰1❱ " + rojo + "NEW MACHINES\t" + verde + "❰2❱ " + rojo + "MACHINE DESCRIPTION\n\n" + verde +
-     "\t❰3❱ " + rojo + "TORRENTS MACHINES\t" + verde + "❰4❱ " + rojo + "EXIT PROGRAM " +cs_color)
+     "\t❰3❱ " + rojo + "EXIT PROGRAM " +cs_color)
     opcion = input(verde + "\n" + "➭➭➭ " + cs_color)
 
     if opcion == "1":
@@ -87,10 +87,6 @@ while True:
             + "\n")
 
     if opcion == "3":
-        for post in feed_torrent.entries:
-            print(rojo + '❖' + rojo + post.title + ": " + verde + strip_tags(post.link))
-
-    if opcion == "4":
 
         break
 
