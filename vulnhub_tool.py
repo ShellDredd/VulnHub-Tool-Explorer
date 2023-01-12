@@ -29,13 +29,6 @@ print (moradito + "    \/\/\/\/\/" + verde + "····" + moradito + "C O M P L 
 call("apt-get install -y python3 && apt install -y python3-venv python3-pip && pip3 install requests && pip3 install beautifulsoup4 && pip3 install feedparser", shell=True)
 call("clear")
 
-#Cabecera Iniciando:
-print (moradito + "\/\/\/\/" + verde + "····· STARTING ·····")
-time.sleep(0.5)
-print (moradito + "  \/\/\/\/" + verde + "················")
-time.sleep(0.5)
-print (moradito + "    \/\/\/\/\/" + verde + "········")
-
 #Variables del programa:
 url = 'https://www.vulnhub.com/feeds/added/rss/'
 url_torrent = 'https://www.vulnhub.com/feeds/torrent/rss/'
@@ -62,19 +55,19 @@ call("clear")
 #Cabecera:
 print("")
 charizar ('     ✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪')
-charizar ('꧁              RED PURPLE      ---      @SHELLDREDD         ꧂  ')
-charizar ('                  #Auto-Updated list of VulnHub machines.    ')
+charizar ('               RED PURPLE      ---      @SHELLDREDD           ')
+charizar ('               #Auto-Updated list of VulnHub machines.    ')
 charizar ('     ✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪')
 
 #Funciones:
 print ('')
-print (moradito + 'DATE AND TIME OF THE LIST : ' + cs_color + verde + str(time).split("b'")[-1].rsplit("n'")[0], sep="")
+print (moradito + 'SCRIPT TIME UPDATE : ' + cs_color + verde + str(time).split("b'")[-1].rsplit("n'")[0], sep="")
 print ('')
 
 while True:
     print ("MENU")
-    print(verde + "❰1❱ " + rojo + "LS NEW MACHINE\t" + verde + "❰2❱ " + rojo + "LS MACHINE DESCRIPTION\n\n" + verde +
-     "\t❰3❱ " + rojo + "LS TORRENTS MACHINES\t" + verde + "❰4❱ " + rojo + "EXIT PROGRAM " +cs_color)
+    print(verde + "❰1❱ " + rojo + "NEW MACHINES\t" + verde + "❰2❱ " + rojo + "MACHINE DESCRIPTION\n\n" + verde +
+     "\t❰3❱ " + rojo + "TORRENTS MACHINES\t" + verde + "❰4❱ " + rojo + "EXIT PROGRAM " +cs_color)
     opcion = input(verde + "\n" + "➭➭➭ " + cs_color)
 
     if opcion == "1":
