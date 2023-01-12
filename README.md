@@ -7,3 +7,5 @@ Cliente de terminal para explorar y descargar máquinas de la plataforma VulnHub
 ✰ Ejecutar el archivo vulnhub_tool.py | Execute the vulnhub_tool.py
 ## $ sudo python3 vulnhub_tool.py
 
+## More tools, articles, writes and videos in ShellDredd Purple Papers:
+✰ https://shelldredd.github.io
