@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Autor: Alexandre Varela Sixto
-# Apodo: || ShellDredd || 
+# Author: ShellDredd
+# Nick: Shelly
 # Twitter: @ShellDredd
 
 #Importación de Liberías y requirimientos:
@@ -19,22 +19,22 @@ rojo="\x1b[1;91m"
 moradito="\x1b[1;35m"
 
 #Cabecera cargando:
-print (moradito + "\/\/\/\/" + verde + "····  🅻🅾🅰🅳🅸🅽🅶 ····" + moradito + "\/\/\/\/\/\/")
+print (moradito + "\/\/\/\/" + verde + "····" + moradito + "L O A D I N G")
 time.sleep(0.5)
-print (moradito + "  \/\/\/\/" + verde + "··············" + moradito + "\/\/\/\/\/\/")
+print (moradito + "  \/\/\/\/" + verde + "····" + moradito + "J U S T   M O M E N T")
 time.sleep(0.5)
-print (moradito + "    \/\/\/\/\/" + verde + "·······" + moradito + "\/\/\/\/\/\/\/")
+print (moradito + "    \/\/\/\/\/" + verde + "····" + moradito + "C O M P L E T E")
 
 #Instalación requirimientos y librerias:
 call("apt-get install -y python3 && apt install -y python3-venv python3-pip && pip3 install requests && pip3 install beautifulsoup4 && pip3 install feedparser", shell=True)
 call("clear")
 
 #Cabecera Iniciando:
-print (moradito + "\/\/\/\/" + verde + "····· 🆂🆃🅰🆁🆃🅸🅽🅶 ·····" + moradito + "\/\/\/\/\/\/")
+print (moradito + "\/\/\/\/" + verde + "····· STARTING ·····")
 time.sleep(0.5)
-print (moradito + "  \/\/\/\/" + verde + "················" + moradito + "\/\/\/\/\/\/")
+print (moradito + "  \/\/\/\/" + verde + "················")
 time.sleep(0.5)
-print (moradito + "    \/\/\/\/\/" + verde + "········" + moradito + "\/\/\/\/\/\/")
+print (moradito + "    \/\/\/\/\/" + verde + "········")
 
 #Variables del programa:
 url = 'https://www.vulnhub.com/feeds/added/rss/'
@@ -45,7 +45,7 @@ url_inicio = 'https://www.vulnhub.com'
 page = requests.get(url_inicio)
 soup = BeautifulSoup(page.content, 'html.parser', on_duplicate_attribute='delete')
 time = subprocess.check_output(['date'])
-descripcion = "🅼🅰🅲🅷🅸🅽🅴 🅳🅴🆂🅲🆁🅸🅿🆃🅸🅾🅽 :\n"
+descripcion = "MACHINE DESCRIPTION :\n"
 
 #Eliminación de impurezas en la salida de datos:
 def strip_tags(value):
@@ -62,24 +62,24 @@ call("clear")
 #Cabecera:
 print("")
 charizar ('     ✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪')
-charizar ('꧁              🆂🅷🅴🅻🅻🅳🆁🅴🅳🅳  🆂🅾🅲🅸🅴🆃🆈               ꧂  ')
-charizar ('         #Updated list of VulnHub machines.    ')
+charizar ('꧁              RED PURPLE      ---      @SHELLDREDD         ꧂  ')
+charizar ('                  #Auto-Updated list of VulnHub machines.    ')
 charizar ('     ✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪✪')
 
 #Funciones:
 print ('')
-print (moradito + '🅳🅰🆃🅴 🅰🅽🅳 🆃🅸🅼🅴 🅾🅵 🆃🅷🅴 🅻🅸🆂🆃 : ' + cs_color + verde + str(time).split("b'")[-1].rsplit("n'")[0], sep="")
+print (moradito + 'DATE AND TIME OF THE LIST : ' + cs_color + verde + str(time).split("b'")[-1].rsplit("n'")[0], sep="")
 print ('')
 
 while True:
-    print ("🅼🅴🅽🆄")
-    print(verde + "❰1❱ " + rojo + "🅽🅴🆆 🅼🅰🅲🅷🅸🅽🅴🆂 🅻🅸🆂🆃\t" + verde + "❰2❱ " + rojo + "🅼🅰🅲🅷🅸🅽🅴🆂 🅳🅴🆂🅲🆁🅸🅿🆃🅸🅾🅽 🅻🅸🆂🆃\n\n" + verde +
-     "\t❰3❱ " + rojo + "🆃🅾🆁🆁🅴🅽🆃 🅻🅸🆂🆃 🅾🅵 🅼🅰🅲🅷🅸🅽🅴🆂\t" + verde + "❰4❱ " + rojo + "🅴🆇🅸🆃 🅿🆁🅾🅶🆁🅰🅼 " +cs_color)
+    print ("MENU")
+    print(verde + "❰1❱ " + rojo + "LS NEW MACHINE\t" + verde + "❰2❱ " + rojo + "LS MACHINE DESCRIPTION\n\n" + verde +
+     "\t❰3❱ " + rojo + "LS TORRENTS MACHINES\t" + verde + "❰4❱ " + rojo + "EXIT PROGRAM " +cs_color)
     opcion = input(verde + "\n" + "➭➭➭ " + cs_color)
 
     if opcion == "1":
         print ("")
-        charizar ("$" + moradito + "🆃🅷🅴🆂🅴 🅰🆁🅴 🆃🅷🅴 🅽🅴🆆 🅼🅰🅲🅷🅸🅽🅴🆂 :")
+        charizar ("$" + moradito + "THESE AR THE NEW MACHINES :")
         print ("")
 
         for link in soup.find_all(class_ = 'card-title'):
@@ -88,9 +88,9 @@ while True:
         print ("")
 
     if opcion == "2":
-        print (moradito + "🅼🅰🅲🅷🅸🅽🅴🆂 🅳🅴🆂🅲🆁🅸🅿🆃🅸🅾🅽 🅻🅸🆂🆃 :\n" + cs_color)
+        print (moradito + "MACHINES DESCRIPTION :\n" + cs_color)
         for post in feed.entries:
-            print(rojo + '🅼🅰🅲🅷🅸🅽🅴 ❖' + rojo + post.title + ": \n" + moradito + descripcion + verde + strip_tags(post.description)
+            print(rojo + 'MACHINE ❖' + rojo + post.title + ": \n" + moradito + descripcion + verde + strip_tags(post.description)
             + "\n")
 
     if opcion == "3":
@@ -103,7 +103,7 @@ while True:
 
 
 call("clear")
-charizar ("🆂🅷🅴🅻🅻🅳🆁🅴🅳🅳 🆂🅰🆈 🅱🆈🅴 🅱🆈🅴")
+charizar ("BYE && SEE YOU LATE")
 
-#FIN...
+#FINISH...
 
